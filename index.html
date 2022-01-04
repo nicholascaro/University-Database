@@ -1,0 +1,51 @@
+<html>
+<body>
+  <div>
+    <h1> CPSC 332 Database Project </h1>
+    <h4> Nicholas Caro, Ben Cheng, Hayley Huynh </h4>
+  </div>
+
+  <fieldset>
+    <legend> For Professors </legend>
+    <br>
+    <b> Professor Look Up </b>
+    <br>
+    <form action = "ProfessorSSN.php" method = "POST">
+        Professor's SSN: <input type = "text" name = "Pssnnum"/>
+        <input type = "submit"/>
+    </form>
+
+    <form action = "GradeCount.php" method = "POST">
+      <br>
+      <b> Grade Count Look Up </b>
+      <br>
+      <label for = "Course"> Course Number </label>
+      <input type = "text" id = "Course" name = "Coursenum">
+      <br>
+      <label for = "Section"> Section Number </label>
+      <input type = "text" id = "Section" name = "Sectionnum">
+      <input type = "submit">
+    </form>
+  </fieldset>
+
+  <fieldset>
+    <legend> For Students </legend>
+    <br>
+    <b> Course Look Up </b>
+    <br>
+    <form action = "CourseNumber.php" method = "POST">
+        <label for = "Course"> Course Number </label>
+        <input type = "text" id = "Course" name = "Coursenum">
+        <input type = "submit">
+    </form>
+
+    <br>
+    <b> Student Transcript </b>
+    <br>
+    <form action = "StudentTranscript.php" method = "POST">
+        <label for = "Transcript"> Student CWID </label>
+        <input type = "text" id = "Transcript" name = "Scwid">
+        <input type = "submit">
+    </form>
+</body>
+</html>
